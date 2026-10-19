@@ -1,7 +1,7 @@
 from odoo import fields, models
 
 class Plant(models.Model):
-    _name = "plant"
+    _name = "plant_shop"
     _description = "plant shop items"
 
     name = fields.Char(required=True)

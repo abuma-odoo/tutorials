@@ -1,4 +1,1 @@
-{
-    'name': 'plant_shop',
-    'depends': ['base'],
-}
+from . import models
