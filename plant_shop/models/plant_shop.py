@@ -1,4 +1,5 @@
 from odoo import api, fields, models
+from odoo.exceptions import ValidationError
 
 class Plant(models.Model):
     _name = "plant_shop"
@@ -25,3 +26,9 @@ class Plant(models.Model):
     @api.onchange("category_id")
     def _onchange_category_id(self):
         self.name = "A type of %s" % (self.category_id.name)
+    
+    @api.constrains("price")
+    def _check_price(self):
+        for record in self:
+            if record.price <= 0:
+                raise ValidationError("Price must be positive")
