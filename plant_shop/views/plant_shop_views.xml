@@ -12,6 +12,7 @@
                 <field name="name"/>
                 <field name="price"/>
                 <field name="category_id"/>
+                <field name="discount"/>
             </list>
         </field>
     </record>
@@ -30,6 +31,9 @@
                     <group>
                         <field name="category_id"/>
                     </group>
+                    <group>
+                        <field name="discount"/>
+                    </group>
                 </sheet>
             </form>
         </field>
@@ -42,6 +46,7 @@
             <field name="name"/>
             <field name="price"/>
             <field name="category_id"/>
+            <field name="discount"/>
         </search>
     </field>
     </record>
