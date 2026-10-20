@@ -7,3 +7,5 @@ class Plant(models.Model):
     name = fields.Char(required=True)
     description = fields.Text()
     price = fields.Float(required=True)
+
+    category_id = fields.Many2one("plant_categories", string="Category")

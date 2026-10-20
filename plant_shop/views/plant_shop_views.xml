@@ -11,6 +11,7 @@
             <list string="Plants">
                 <field name="name"/>
                 <field name="price"/>
+                <field name="category_id"/>
             </list>
         </field>
     </record>
@@ -26,6 +27,9 @@
                     <group>
                         <field name="price"/>
                     </group>
+                    <group>
+                        <field name="category_id"/>
+                    </group>
                 </sheet>
             </form>
         </field>
@@ -37,6 +41,7 @@
         <search string="Plants">
             <field name="name"/>
             <field name="price"/>
+            <field name="category_id"/>
         </search>
     </field>
     </record>

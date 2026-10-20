@@ -1,2 +1,3 @@
 id,name,model_id,group_id/id,operation,domain
 access_plant_shop,access_plant_shop,plant_shop,base.group_user,crud,
+access_plant_categories,access_plant_categories,plant_categories,base.group_user,crud,
