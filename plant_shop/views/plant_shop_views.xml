@@ -21,6 +21,9 @@
         <field name="model">plant_shop</field>
         <field name="arch" type="xml">
             <form>
+            <header>
+                <button name="action_open" type="object" string="No plants?"/>
+            </header>
                 <sheet>
                     <group>
                         <field name="name"/>

@@ -11,6 +11,12 @@ class Plant(models.Model):
 
     category_id = fields.Many2one("plant_categories", string="Category")
 
+
+    def action_open(self):
+        for record in self:
+            record.name = "N/A"
+        return True
+
     @api.depends("price")
     def _compute_total(self):
         for record in self:
