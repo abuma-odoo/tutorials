@@ -1,0 +1,7 @@
+<odoo>
+    <record id="plant_shop_action" model="ir.actions.act_window">
+        <field name="name">Plants</field>
+        <field name="res_model">plant_shop</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

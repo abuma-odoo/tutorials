@@ -1,0 +1,7 @@
+<odoo>
+    <menuitem id="plant_shop_menu_root" name="Plant Shop">
+        <menuitem id="plant_shop_first_level_menu" name="Plants">
+            <menuitem id="plant_shop_menu_action" action="plant_shop_action"/>
+        </menuitem>
+    </menuitem>
+</odoo>
